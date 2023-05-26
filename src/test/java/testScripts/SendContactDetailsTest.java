@@ -6,6 +6,8 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import genericLibraries.BaseClass;
+import genericLibraries.ContactUsPage;
+
 
 public class SendContactDetailsTest extends BaseClass
 {
