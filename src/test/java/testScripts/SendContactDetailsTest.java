@@ -17,7 +17,7 @@ public class SendContactDetailsTest extends BaseClass
 		home.clickSkillraryDemoApp();
 		web.handleChildBrowser();
 		
-		soft.assertTrue(demoApp.getLogoText().contains("Ecommerce"));
+		soft.assertTrue(demoApp.getLogoText().contains("ECommerce"));
 		
 		web.scrollToElement(demoApp.getContactUs());
 		demoApp.clickContactUs();
@@ -25,7 +25,7 @@ public class SendContactDetailsTest extends BaseClass
 		soft.assertTrue(contact.getPageLogo().isDisplayed());
 		home.chooseEnglish();
 		Map<String,String> map = excel.readDataFromExcel("Sheet1");
-		contact.sendDetails(map.get("FullName"),map.get("Email"),map.get("Subject"),map.get("Message"));
+		contact.sendDetails(map.get("fullname"),map.get("Email"),map.get("subject"),map.get("Message"));
 		
 		soft.assertAll();
 	}

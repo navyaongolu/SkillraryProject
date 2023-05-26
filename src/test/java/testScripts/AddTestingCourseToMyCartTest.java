@@ -15,7 +15,7 @@ public class AddTestingCourseToMyCartTest extends BaseClass
 		home.clickSkillraryDemoApp();
 		web.handleChildBrowser();
 		
-		soft.assertTrue(demoApp.getLogoText().contains("Ecommerce"));
+		soft.assertTrue(demoApp.getLogoText().contains("ECommerce"));
 		
 		demoApp.selectCategory(web, 1);
 		soft.assertEquals(testing.getPageHeader(),"Testing");
